@@ -2,7 +2,7 @@
 
 ### Overview
 
-This repository contains PowerShell Desired State Configuration (DSC) artifacts for configuration management demonstrated at the presentation PowerShell Desired State Configuration – Real World Experiences presented at PowerShell Summit Europe 2015
+This repository contains PowerShell Desired State Configuration (DSC) artifacts for configuration management demonstrated in the presentation PowerShell Desired State Configuration – Real World Experiences presented at PowerShell Summit Europe 2015
 
 http://eventmgr.azurewebsites.net/event/home/PSEU15
 
