@@ -1,0 +1,14 @@
+﻿
+[ClassVersion("1.0.0.1"), FriendlyName("VMHost")]
+class Crayon_VMHost : OMI_BaseResource
+{
+	[Key] String VMHost;
+	[Write, ValueMap{"Present","Absent"}, Values{"Present","Absent"}] String Ensure;
+	[Write] String VirtualDiskPath;
+	[Write] String VirtualMachinePath;
+    [Write] Uint32 MaximumStorageMigrations;
+    [Write] Uint32 MaximumVirtualMachineMigrations;
+	[Write, ValueMap{"True","False","","0","1"}, Values{"True","False","","0","1"}] String VirtualMachineMigration;
+	[Write, ValueMap{"True","False","","0","1"}, Values{"True","False","","0","1"}] String EnhancedSessionMode;
+	[Read] Boolean HyperVPowerShell;
+};

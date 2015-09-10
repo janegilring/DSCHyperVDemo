@@ -1,0 +1,7 @@
+﻿[ClassVersion("1.0.0.0"), FriendlyName("SNMPCommunity")]
+class Crayon_SNMPCommunity : OMI_BaseResource
+{
+	[Key] String Community;
+	[Required , ValueMap{"None","Notify","ReadOnly","ReadWrite","ReadCreate"}, Values{"None","Notify","ReadOnly","ReadWrite","ReadCreate"}] String Right;
+	[Required , ValueMap{"Present","Absent"}, Values{"Present","Absent"}] String Ensure;
+};

@@ -1,0 +1,9 @@
+﻿
+[ClassVersion("1.0.0.0"), FriendlyName("SNMPTrapCommunity")]
+class Crayon_SNMPTrapCommunity : OMI_BaseResource
+{
+	[Key] String Community;
+	[Write, ValueMap{"Present","Absent"}, Values{"Present","Absent"}] String Ensure;
+};
+
+

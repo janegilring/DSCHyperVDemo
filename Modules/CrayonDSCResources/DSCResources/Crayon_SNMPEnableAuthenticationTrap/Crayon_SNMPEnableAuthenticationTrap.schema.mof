@@ -1,0 +1,9 @@
+﻿
+[ClassVersion("1.0.0.0"), FriendlyName("SNMPEnableAuthenticationTrap")]
+class Crayon_SNMPEnableAuthenticationTrap : OMI_BaseResource
+{
+	[Key] String EnableAuthenticationTraps;
+	[Write, ValueMap{"Present","Absent"}, Values{"Present","Absent"}] String Ensure;
+};
+
+

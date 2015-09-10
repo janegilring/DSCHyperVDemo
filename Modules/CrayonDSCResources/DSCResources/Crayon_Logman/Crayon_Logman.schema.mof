@@ -1,0 +1,9 @@
+﻿[ClassVersion("1.0.0.0"), FriendlyName("Logman")]
+class Crayon_Logman : OMI_BaseResource
+{
+	[Key] String DataCollectorSetName;
+	[Write, ValueMap{"Present","Absent"}, Values{"Present","Absent"}] String Ensure;
+	[Required] String XmlTemplatePath;
+};
+
+

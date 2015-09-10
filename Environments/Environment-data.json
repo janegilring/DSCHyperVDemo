@@ -1,0 +1,65 @@
+{
+    "Name":  "CrayonDemo",
+    "Environments":  [
+                  {
+						"CompanyName":  "Crayon Demo",
+						"EnvironmentName":  "Prod",
+						"Prefix":  "Crayon",
+						"DomainFQDN":  "demo.crayon.com",
+						"SMAWebServiceEndpoint": "https://smaweb.demo.crayon.com",
+						"PowerShellDFSRoot": "\\\\demo.crayon.com\\ITOps\\PowerShell",
+						"PowerShellDSCPullServerUrl": "https://dsc-pull.demo.crayon.com:8080/PSDSCPullServer.svc",
+						"PowerShellDSCPullServerComplianceUri": "http://dsc-pull.demo.crayon.com:9080/PSDSCComplianceServer.svc/Status",
+						"PowerShellDSCPullServerFQDN": "DEMOWEB01.demo.crayon.com",
+						"PowerShellDSCPullServerCertificateThumbprint": "97488F3A1D44EBB6730D718529B9AF7B90B3FCAF",
+						"DNSServerAddresses":  "172.16.40.2",
+						"HPWBEMProviderSource": "\\\\demo.crayon.com\\ITOps\\Install\\PowerShell DSC Source\\HP\\HP Insight Agenter\\cp022424.exe",
+						"EMCPowerPathSource": "\\\\demo.crayon.com\\ITOps\\Install\\PowerShell DSC Source\\EMC\\EMCPower.X64.signed.6.0.b401\\EMCPower.X64.signed.6.0.b401.exe",
+						"HyperVPerfMonName": "Crayon Hyper-V Performance Monitor 1.1",
+						"HyperVPerfMonTemplatePath": "\\\\demo.crayon.com\\ITOps\\Resources\\PerfLogs\\Templates\\Crayon_Hyper-V_1.1.xml",
+						"SMAWorkerServers": ["DEMOSMA01"],
+						"DSCManagementServers": ["DEMORD01","DEMOWAP01"],
+
+						"Users": [
+									{
+										"Name" : "Jan Egil Ring",
+										"EMail" : "jan.egil.ring@crayon.com",
+										"Username" : "adm_janring",
+										"UserDNSDomain": "demo.crayon.com",
+										"LocalGitRepository": "~\\Git\\CrayonDemo-DSC-Hyper-V"
+				  					 }
+						]
+
+                  },
+				   {
+						"CompanyName":  "Crayon Demo",
+						"EnvironmentName":  "Test",
+						"Prefix":  "Crayon",
+						"DomainFQDN":  "test.crayon.com",
+						"SMAWebServiceEndpoint": "https://smaweb.test.crayon.com",
+						"PowerShellDFSRoot": "\\\\test.crayon.com\\ITOps\\PowerShell",
+						"PowerShellDSCPullServerUrl": "https://dsc-pull.test.crayon.com:8080/PSDSCPullServer.svc",
+						"PowerShellDSCPullServerComplianceUri": "http://dsc-pull.test.crayon.com:9080/PSDSCComplianceServer.svc/Status",
+						"PowerShellDSCPullServerFQDN": "TSTSRV123006.test.crayon.com",
+						"PowerShellDSCPullServerCertificateThumbprint": "4B20EE3EC30336951B66B74BBE9B5DA21FEFF3F1",
+						"DNSServerAddresses":  "10.225.100.15",
+						"HPWBEMProviderSource": "\\test.crayon.com\\ITOps\\Install\\PowerShell DSC Source\\HP\\HP Insight Agenter\\cp022424.exe",
+						"EMCPowerPathSource": "\\test.crayon.com\\ITOps\\Install\\PowerShell DSC Source\\EMC\\EMCPower.X64.signed.6.0.b401\\EMCPower.X64.signed.6.0.b401.exe",
+						"HyperVPerfMonName": "Crayon Hyper-V Performance Monitor 1.1",
+						"HyperVPerfMonTemplatePath": "\\\\test.crayon.com\\ITOps\\Resources\\PerfLogs\\Templates\\Crayon_Hyper-V_1.1.xml",
+						"SMAWorkerServers": ["TSTMSC123001"],
+						"DSCManagementServers": ["TSTRDS123001"],
+
+						"Users": [
+									{
+										"Name" : "Jan Egil Ring",
+										"EMail" : "jan.egil.ring@crayon.com",
+										"Username" : "adminrinjan",
+										"UserDNSDomain": "test.crayon.com",
+										"LocalGitRepository": "~\\Git\\CrayonDemo-DSC-Hyper-V"
+				  					 }
+						]
+
+                  }
+              ]
+}

@@ -1,0 +1,7 @@
+﻿[ClassVersion("1.0.0"), FriendlyName("DNSServerAddress")] 
+class Crayon_DNSServerAddress : OMI_BaseResource
+{
+  [Required] string Address[];
+  [Key] string InterfaceAlias;
+  [Write,ValueMap{"IPv4", "IPv6"},Values{"IPv4", "IPv6"}] string AddressFamily;
+};

@@ -1,0 +1,8 @@
+﻿
+[ClassVersion("1.0"), FriendlyName("WindowsUpdateMode")]
+class Crayon_WindowsUpdateMode : OMI_BaseResource
+{
+	[Key, ValueMap{"Notify","DownloadOnly","DownloadAndInstall","Disable","AllowUserConfig"}, Values{"Notify","DownloadOnly","DownloadAndInstall","Disable","AllowUserConfig"}] String UpdateMode;
+};
+
+

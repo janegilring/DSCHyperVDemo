@@ -1,0 +1,9 @@
+﻿
+[ClassVersion("1.0.0.0"), FriendlyName("SNMPManager")]
+class Crayon_SNMPManager : OMI_BaseResource
+{
+	[Key] String Manager;
+	[Write, ValueMap{"Present","Absent"}, Values{"Present","Absent"}] String Ensure;
+};
+
+
